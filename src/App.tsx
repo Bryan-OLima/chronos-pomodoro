@@ -6,7 +6,9 @@ import "./styles/global.css";
 export const App = () => {
   return (
     <>
-      <Heading />
+      <Heading attr={123} attr2="string string">
+        Hello world
+      </Heading>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
         laboriosam error placeat aspernatur ex voluptate voluptates mollitia,
