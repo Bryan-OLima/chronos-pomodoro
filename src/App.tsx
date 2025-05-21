@@ -3,12 +3,18 @@ import { Heading } from "./components/Heading";
 import "./styles/theme.css";
 import "./styles/global.css";
 
+import { TrashIcon } from "lucide-react";
+
 export const App = () => {
   return (
     <>
-      <Heading attr={123} attr2="string string">
+      <Heading>
         Hello world
+        <button>
+          <TrashIcon />
+        </button>
       </Heading>
+
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
         laboriosam error placeat aspernatur ex voluptate voluptates mollitia,
