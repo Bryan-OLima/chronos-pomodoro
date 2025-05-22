@@ -9,7 +9,7 @@ export const App = () => {
   return (
     <>
       <Heading>
-        Hello world
+        Hello world!
         <button>
           <TrashIcon />
         </button>
