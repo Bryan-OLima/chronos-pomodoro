@@ -5,6 +5,7 @@ import { Menu } from "./components/Menu";
 import "./styles/theme.css";
 import "./styles/global.css";
 import { CountDown } from "./components/CountDown";
+import { DefaultInput } from "./components/DefaultInput/Index";
 
 export const App = () => {
   return (
@@ -24,8 +25,13 @@ export const App = () => {
       <Container>
         <form className="form" action="">
           <div className="formRow">
-            <label htmlFor="input">task</label>
-            <input type="text" id="input" />
+            <DefaultInput
+              labelText="anything"
+              id="input"
+              type="text"
+              title="Titulo"
+              placeholder="Type Anything"
+            />
           </div>
 
           <div className="formRow">
