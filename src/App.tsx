@@ -6,6 +6,7 @@ import "./styles/theme.css";
 import "./styles/global.css";
 import { CountDown } from "./components/CountDown";
 import { DefaultInput } from "./components/DefaultInput/Index";
+import { Cycles } from "./components/Cycles";
 
 export const App = () => {
   return (
@@ -26,7 +27,7 @@ export const App = () => {
         <form className="form" action="">
           <div className="formRow">
             <DefaultInput
-              labelText="anything"
+              labelText="task"
               id="input"
               type="text"
               title="Titulo"
@@ -39,8 +40,7 @@ export const App = () => {
           </div>
 
           <div className="formRow">
-            <p>Ciclos</p>
-            <p>0 0 0 0</p>
+            <Cycles />
           </div>
           <div className="formRow">
             <button>Enviar</button>
