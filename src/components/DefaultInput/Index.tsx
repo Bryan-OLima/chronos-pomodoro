@@ -9,12 +9,12 @@ export const DefaultInput = ({
   type,
   id,
   labelText,
-  ...rest
+  ...props
 }: DefaultInputProps) => {
   return (
     <>
       <label htmlFor={id}>{labelText}</label>
-      <input className={styles.input} type={type} id={id} {...rest} />
+      <input className={styles.input} type={type} id={id} {...props} />
     </>
   );
 };
