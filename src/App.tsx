@@ -4,6 +4,7 @@ import { Menu } from "./components/Menu";
 
 import "./styles/theme.css";
 import "./styles/global.css";
+import { CountDown } from "./components/CountDown";
 
 export const App = () => {
   return (
@@ -11,8 +12,13 @@ export const App = () => {
       <Container>
         <Logo />
       </Container>
+
       <Container>
         <Menu />
+      </Container>
+
+      <Container>
+        <CountDown />
       </Container>
     </>
   );
